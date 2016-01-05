@@ -1,0 +1,28 @@
+{
+  "name": "es6katas-solutions",
+  "version": "1.0.0",
+  "description": "Solutions for es6katas.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tienthanh8490/es6katas-solutions.git"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "Thanh Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tienthanh8490/es6katas-solutions/issues"
+  },
+  "homepage": "https://github.com/tienthanh8490/es6katas-solutions#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
