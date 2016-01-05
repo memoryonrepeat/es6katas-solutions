@@ -4,7 +4,7 @@ TESTCASES = tests/**.js
 # NODE_ENV=test mocha $(TESTCASES) --reporter nyan tests -b
 
 test:
-	NODE_ENV=test mocha --compilers js:babel-register $(TESTCASES) --reporter spec tests -b
+	NODE_ENV=test mocha --compilers js:babel-register $(TESTCASES) --reporter spec tests
 
 # The "make" program always try to find a target file with
 # the indicated name to build. This is not the case as we just want
