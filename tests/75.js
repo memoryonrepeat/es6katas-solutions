@@ -3,7 +3,7 @@
 
 let assert = require('chai').assert;
 
-describe('a Promise represents an operation that hasn`t completed yet, but is expected in the future', function() {
+describe.skip('a Promise represents an operation that hasn`t completed yet, but is expected in the future', function() {
 
   it('`Promise` is a global function', function() {
     const expectedType = 'function';
