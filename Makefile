@@ -1,4 +1,4 @@
-TESTCASES = tests/**.js
+TESTCASES = tests/**/**.js
 
 # Bored of testing ? Try this:
 # NODE_ENV=test mocha $(TESTCASES) --reporter nyan tests -b
