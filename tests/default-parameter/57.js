@@ -15,11 +15,11 @@ describe('default parameters make function parameters more flexible', () => {
     let number = (int = 23) => int;
     const param = 42;
     
-    assert.equal(number(param), 23);
+    assert.equal(number(), 23);
   });
 
   it('it is not used when a value is given', function() {
-    function xhr() {
+    function xhr(method = 'GET') {
       return method;  
     }
     
@@ -27,17 +27,21 @@ describe('default parameters make function parameters more flexible', () => {
   });
 
   it('it is evaluated at run time', function() {
-    let defaultValue;
+    let defaultValue = 42;
+
     function xhr(method = `value: ${defaultValue}`) {
       return method;  
     }
     
     assert.equal(xhr(), 'value: 42');
+
     defaultValue = 23;
+
+    assert.equal(xhr(), 'value: 23');
   });
 
   it('it can also be a function', function() {
-    let defaultValue;
+    let defaultValue = () => 1;
     function fn(value = defaultValue()) {
       return value;  
     }
