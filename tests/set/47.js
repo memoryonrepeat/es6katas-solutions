@@ -35,7 +35,7 @@ describe('`Set` lets you store unique values of any type', function(){
     assert.equal(set.size, 1);
   });
   
-  it.only('+0 and -0 are seen as equal', function() {
+  it('+0 and -0 are seen as equal', function() {
     let set = new Set();
     set.add(+0);
     set.add(0);
