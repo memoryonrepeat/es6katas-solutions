@@ -10,7 +10,7 @@ describe('array is a built-in iterable object', function() {
   
   const arr = ['a', 'B', 'see'];
 
-  describe.only('the iterator', function() {
+  describe('the iterator', function() {
     it('an array has an iterator, which is a function', function() {
       const iterator = arr[Symbol.iterator];
       const theType = typeof iterator;
