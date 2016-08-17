@@ -3,7 +3,7 @@
 
 let assert = require('chai').assert;
 
-describe.only('`Map` is a key/value map', function(){
+describe('`Map` is a key/value map', function(){
 
   it('`Map` is a new global constructor function', function() {
     assert.equal(typeof Map, 'function');
